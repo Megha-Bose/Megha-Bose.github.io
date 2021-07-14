@@ -109,7 +109,7 @@ div.abt {
   line-height: 1.5em;
   text-align: justify;
   font-family: monospace;
-  font-size: 1.2em;
+  font-size: 1.05em;
 }
 
 .aboutbtn {
@@ -174,7 +174,7 @@ li{
 .awardlist {
   font-weight: bold;
   font-family: monospace;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 .project-item{
@@ -195,9 +195,34 @@ li{
   text-decoration: underline;
 }
 
-.dropdown-menu {
+.dropdown .dropdown-menu {
+  -webkit-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -moz-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -ms-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  -o-transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+  transition: max-height 0.3s, opacity 0.2s 0.1s, visibility 0s 0.3s;
+
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
   position: relative;
-  width:100%;
+  width: 100%;
+  background-color: #D5D5D5;
+}
+
+.dropdown.show .dropdown-menu{
+  -webkit-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -moz-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -ms-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  -o-transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  transition: max-height 0.3s, opacity 0.2s, visibility 0s;
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  width: 100%;
   background-color: #D5D5D5;
 }
 
@@ -395,7 +420,7 @@ footer.footsy h1 {
 }
 
 .main-timeline .month {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700
 }
 
